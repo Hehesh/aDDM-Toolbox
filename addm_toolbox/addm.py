@@ -75,6 +75,19 @@ class FixationData:
         self.fixations = fixations
         self.fixDistType = fixDistType
 
+    
+    def get_probFixLeftFirst(self):
+        return self.probFixLeftFirst
+
+    def get_latencies(self):
+        return self.latencies
+
+    def get_transitions(self):
+        return self.transitions
+
+    def get_fixations(self):
+        return self.fixations
+
 
 class aDDMTrial(DDMTrial):
     def __init__(self, RT, choice, valueLeft, valueRight,
